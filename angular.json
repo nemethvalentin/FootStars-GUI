@@ -104,5 +104,7 @@
       }
     }
   },
-  "defaultProject": "something"
+  "cli": {
+    "analytics": false
+  }
 }
