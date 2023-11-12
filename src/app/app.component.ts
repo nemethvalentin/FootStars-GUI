@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { environment } from 'src/environments/environment';
-import {HttpClient} from '@angular/common/http'
 
 @Component({
   selector: 'app-root',
@@ -9,11 +7,15 @@ import {HttpClient} from '@angular/common/http'
 })
 export class AppComponent {
   title = 'something';
-  openSidenav = false;
 
-  constructor(){}
+  isOpenedSideBar = true;
 
+  toggleSideBar = ( event: any) => {
+    this.isOpenedSideBar = !this.isOpenedSideBar;
+  }
 
+  profileData = "";
 
-
+  
+  
 }

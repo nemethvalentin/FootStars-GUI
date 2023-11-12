@@ -1,0 +1,43 @@
+.sidenavContainer.mat-sidenav-container {
+    height: calc(100vh - 64px);
+    margin-top: -10px;
+    background-color: transparent;
+}
+
+.sidenavContainer .mat-sidenav-content {
+    margin-top: 10px;
+    height: calc(100% - 10px);
+}
+
+.sidenavContainer .mat-sidenav-content main {
+    padding: 0 10px 10px 10px;
+    height: calc(100% - 10px);
+}
+
+.sidenavContainer .mat-sidenav {
+    height: 100%;
+    width: 255px;
+}
+
+.sidenavContainer .mat-expansion-panel {
+    border-radius: 0;
+}
+
+.menuItemContainer {
+    display: flex;
+    align-items: center;
+}
+
+.menuItemContainer mat-icon {
+    margin-right: 5px;
+}
+
+.prices {
+    padding-top: 3px;
+}
+
+.pricesIcon {
+    width: 27px;
+    height: 27px;
+    font-size: 27px;
+}

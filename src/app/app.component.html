@@ -1,2 +1,4 @@
-<app-header></app-header>
-<app-sidenav></app-sidenav>
+<header (toggleSideBar)="toggleSideBar($event)"></header>
+<sidenav [toggleSideBar]="isOpenedSideBar"></sidenav>
+<router-outlet></router-outlet>
+<footer></footer>

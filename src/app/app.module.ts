@@ -11,12 +11,14 @@ import {MatListModule} from '@angular/material/list'
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FootballercardComponent } from './footballercard/footballercard.component';
+import { FootballercardComponent } from './modules/footballercard/footballercard.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SidenavComponent } from './overlay/sidenav/sidenav.component';
 import { FooterComponent } from './overlay/footer/footer.component';
 import { HeaderComponent } from './overlay/header/header.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './modules/home/home.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { HeaderComponent } from './overlay/header/header.component';
     FootballercardComponent,
     SidenavComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,8 @@ import { HeaderComponent } from './overlay/header/header.component';
     MatIconModule,
     MatButtonModule,
     MatTooltipModule,
-    MatListModule 
+    MatListModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

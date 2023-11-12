@@ -1,20 +1,17 @@
-<p>
-    <mat-toolbar color="warn" class="header-toolbar" fxFlex="100">
-        <div fxLayoutAlign="start center" fxFlex="40">
+<mat-toolbar color="warn" class="mat-elevation-z6" fxLayout fxLayoutAlign="space-between center">
+    <div fxLayoutAlign="start center" class="logoContainer">
+        <button mat-icon-button matTooltip="Menü" (click)="onClickToggleSideBar()">
             <mat-icon style="cursor: pointer">menu</mat-icon>
-        </div>
-        <div fxLayoutAlign="center center" fxFlex="20">
-            <h1>FOOTSTARS</h1>
-        </div>
-        <div fxLayoutAlign="end center" fxFlex="40">
-            <button mat-icon-button matTooltip="Profil" matTooltipPosition="below">
-                <mat-icon style="cursor: pointer">person</mat-icon>
-            </button>
-            <span fxFlex="1"></span>
-            <button mat-icon-button  matTooltip="Kijelentkezés" matTooltipPosition="below">
-                <mat-icon style="cursor: pointer" >power_settings_new</mat-icon>
-            </button>
-        </div>
-     
-    </mat-toolbar>
-  </p>
+        </button>
+    </div>
+   <span> {{title}} </span>
+    <div fxLayoutAlign="end center" fxLayoutGap="10px">
+        <button mat-icon-button matTooltip="Profil" matTooltipPosition="below">
+            <mat-icon style="cursor: pointer">person</mat-icon>
+        </button>
+        <span fxFlex="1"></span>
+        <button mat-icon-button  matTooltip="Kijelentkezés" matTooltipPosition="below">
+            <mat-icon style="cursor: pointer" >power_settings_new</mat-icon>
+        </button>
+    </div>
+</mat-toolbar>
