@@ -6,13 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'something';
-
-  isOpenedSideBar = true;
-
-  toggleSideBar = ( event: any) => {
-    this.isOpenedSideBar = !this.isOpenedSideBar;
-  }
+  title = 'FootStars';
 
   profileData = "";
 

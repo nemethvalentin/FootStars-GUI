@@ -19,6 +19,7 @@ import { FooterComponent } from './overlay/footer/footer.component';
 import { HeaderComponent } from './overlay/header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './modules/home/home.component';
+import { ProfileComponent } from './modules/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { HomeComponent } from './modules/home/home.component';
     SidenavComponent,
     FooterComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
